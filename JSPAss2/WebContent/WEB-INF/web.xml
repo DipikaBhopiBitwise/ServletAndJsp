@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>LoginServletQ2</servlet-name>
+    <servlet-class>servlets2.LoginServletQ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServletQ2</servlet-name>
+    <url-pattern>/LoginServletQ2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LogoutServletQ2</servlet-name>
+    <servlet-class>servlets2.LogoutServletQ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServletQ2</servlet-name>
+    <url-pattern>/LogoutServletQ2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>servlets2.ShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/ShoppingCartServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>ValidateFilterQ2</filter-name>
+    <filter-class>servlets2.ValidateFilterQ2</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ValidateFilterQ2</filter-name>
+    <url-pattern>/LoginServletQ2</url-pattern>
+  </filter-mapping>
+</web-app>
